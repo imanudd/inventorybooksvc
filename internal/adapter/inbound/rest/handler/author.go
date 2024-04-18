@@ -46,6 +46,7 @@ func (h *Handler) CreateAuthor(c *gin.Context) {
 // @Tags author
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @Param id path string true "author id"
 // @Param input body domain.AddAuthorBookRequest true "data"
 // @Success 200 {object} helper.JSONResponse
@@ -82,6 +83,7 @@ func (h *Handler) AddAuthorBook(c *gin.Context) {
 // @Tags author
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @Param id path string true "author id"
 // @Success 200 {object} helper.JSONResponse{data=[]domain.Book}
 // @Failure 400 {object} helper.JSONResponse
@@ -110,6 +112,7 @@ func (h *Handler) GetListBookByAuthor(c *gin.Context) {
 // @Tags author
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @Param id path string true "author id"
 // @Param bookid path string true "book id"
 // @Success 200 {object} helper.JSONResponse

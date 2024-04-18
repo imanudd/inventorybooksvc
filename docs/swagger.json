@@ -163,6 +163,11 @@
         },
         "/inventorysvc/managements/author/{id}": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "add author book",
                 "consumes": [
                     "application/json"
@@ -216,6 +221,11 @@
         },
         "/inventorysvc/managements/author/{id}/books/{bookid}": {
             "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get list book by author",
                 "consumes": [
                     "application/json"
@@ -267,6 +277,11 @@
         },
         "/inventorysvc/managements/author/{id}/list": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get list book by author",
                 "consumes": [
                     "application/json"
@@ -326,6 +341,11 @@
         },
         "/inventorysvc/managements/book": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "add book",
                 "consumes": [
                     "application/json"
@@ -372,6 +392,11 @@
         },
         "/inventorysvc/managements/book/{id}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get detail book",
                 "consumes": [
                     "application/json"
@@ -426,6 +451,11 @@
                 }
             },
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "update book",
                 "consumes": [
                     "application/json"
@@ -477,6 +507,11 @@
                 }
             },
             "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "delete book",
                 "consumes": [
                     "application/json"

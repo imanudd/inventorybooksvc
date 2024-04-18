@@ -247,6 +247,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: add author book
       tags:
       - author
@@ -281,6 +283,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: get list book by author
       tags:
       - author
@@ -317,6 +321,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: get list book by author
       tags:
       - author
@@ -347,6 +353,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: add book
       tags:
       - book
@@ -376,6 +384,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: delete book
       tags:
       - book
@@ -409,6 +419,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: get detail book
       tags:
       - book
@@ -443,6 +455,8 @@ paths:
           description: Internal Server Error
           schema:
             $ref: '#/definitions/helper.JSONResponse'
+      security:
+      - ApiKeyAuth: []
       summary: update book
       tags:
       - book

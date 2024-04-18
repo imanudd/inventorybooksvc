@@ -170,6 +170,11 @@ const docTemplate = `{
         },
         "/inventorysvc/managements/author/{id}": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "add author book",
                 "consumes": [
                     "application/json"
@@ -223,6 +228,11 @@ const docTemplate = `{
         },
         "/inventorysvc/managements/author/{id}/books/{bookid}": {
             "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get list book by author",
                 "consumes": [
                     "application/json"
@@ -274,6 +284,11 @@ const docTemplate = `{
         },
         "/inventorysvc/managements/author/{id}/list": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get list book by author",
                 "consumes": [
                     "application/json"
@@ -333,6 +348,11 @@ const docTemplate = `{
         },
         "/inventorysvc/managements/book": {
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "add book",
                 "consumes": [
                     "application/json"
@@ -379,6 +399,11 @@ const docTemplate = `{
         },
         "/inventorysvc/managements/book/{id}": {
             "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "get detail book",
                 "consumes": [
                     "application/json"
@@ -433,6 +458,11 @@ const docTemplate = `{
                 }
             },
             "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "update book",
                 "consumes": [
                     "application/json"
@@ -484,6 +514,11 @@ const docTemplate = `{
                 }
             },
             "delete": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
                 "description": "delete book",
                 "consumes": [
                     "application/json"

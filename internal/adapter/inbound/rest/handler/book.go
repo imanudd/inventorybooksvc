@@ -15,6 +15,7 @@ import (
 // @Tags book
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @Param input body domain.CreateBookRequest true "data"
 // @Success 200 {object} helper.JSONResponse
 // @Failure 400 {object} helper.JSONResponse
@@ -43,6 +44,7 @@ func (h *Handler) AddBook(c *gin.Context) {
 // @Tags book
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @param id path string true "book id"
 // @Param input body domain.UpdateBookRequest true "data"
 // @Success 200 {object} helper.JSONResponse
@@ -79,6 +81,7 @@ func (h *Handler) UpdateBook(c *gin.Context) {
 // @Tags book
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @param id path string true "book id"
 // @Success 200 {object} helper.JSONResponse
 // @Failure 400 {object} helper.JSONResponse
@@ -107,6 +110,7 @@ func (h *Handler) DeleteBook(c *gin.Context) {
 // @Tags book
 // @Accept json
 // @Produce json
+// @Security ApiKeyAuth
 // @param id path string true "book id"
 // @Success 200 {object} helper.JSONResponse{data=domain.DetailBook}
 // @Failure 400 {object} helper.JSONResponse
